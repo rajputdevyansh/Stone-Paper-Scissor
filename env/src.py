@@ -21,7 +21,6 @@ while True:
     imgScaled = cv2.resize(img, (0, 0),None,0.875,0.875)
     imgScaled=imgScaled[:,80:480]
 
-    #find the hand
     hands, img = detector.findHands(imgScaled)
 
     if startGame:
